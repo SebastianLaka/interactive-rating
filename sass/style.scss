@@ -8,30 +8,48 @@ body {
   background-color: $black;
   color: $white;
 }
-.main{
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  .first-display-card{
+  .first-display-card {
     padding: 3em;
     background-color: $VeryDarkBlue;
     border-radius: 5%;
   }
 }
-@media(min-width: 375px){
-.first-display-card{
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 350px;
-
+@media (min-width: 375px) {
+  .first-display-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    &__icon {
+      width: 44px;
+      height: 44px;
+      padding: 1.25em;
+      background-color: $DarkBlue;
+      border-radius: 50%;
+    }
+    &__header{
+      margin: 1.5em 0;
+      font-size: 2rem;
+    }
+  }
 }
-
-}
-@media(min-width: 1440px){
-  .first-display-card{
+@media (min-width: 1440px) {
+  .first-display-card {
     width: 500px;
     height: 500px;
+    &__icon{
+      width: 54px;
+      height: 54px;
+      padding: 1.5em;
+    }
+    &__header{
+      margin: 1.5em 0;
+      font-size: 3.5rem;
+    }
   }
 }
