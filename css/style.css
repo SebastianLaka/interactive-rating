@@ -36,6 +36,10 @@ body {
   border-radius: 5%;
 }
 
+.main .first-display-card__description {
+  color: #7c8798;
+}
+
 @media (min-width: 375px) {
   .first-display-card {
     display: -webkit-box;
@@ -49,15 +53,19 @@ body {
     height: 350px;
   }
   .first-display-card__icon {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     padding: 1.25em;
     background-color: #262f3b;
     border-radius: 50%;
   }
   .first-display-card__header {
-    margin: 1.5em 0;
+    margin: 1.5em 0 1em 0;
     font-size: 2rem;
+  }
+  .first-display-card__description {
+    font-size: 1.25rem;
+    line-height: 150%;
   }
 }
 
@@ -72,8 +80,11 @@ body {
     padding: 1.5em;
   }
   .first-display-card__header {
-    margin: 1.5em 0;
+    margin: 1.5em 0 1em 0;
     font-size: 3.5rem;
+  }
+  .first-display-card__description {
+    font-size: 1.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
