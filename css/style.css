@@ -29,4 +29,31 @@ body {
           align-items: center;
   height: 100vh;
 }
+
+.main .first-display-card {
+  padding: 3em;
+  background-color: #1a222d;
+  border-radius: 5%;
+}
+
+@media (min-width: 375px) {
+  .first-display-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .first-display-card {
+    width: 500px;
+    height: 500px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

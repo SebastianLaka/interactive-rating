@@ -13,10 +13,25 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  .first-display-card{
+    padding: 3em;
+    background-color: $VeryDarkBlue;
+    border-radius: 5%;
+  }
+}
+@media(min-width: 375px){
+.first-display-card{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+
 }
 
-
-
-@media(min-width: 375px){
-
+}
+@media(min-width: 1440px){
+  .first-display-card{
+    width: 500px;
+    height: 500px;
+  }
 }
