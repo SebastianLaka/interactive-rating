@@ -40,8 +40,17 @@ body {
   color: #7c8798;
 }
 
+.main .first-display-card__primary-button {
+  border-radius: 25px;
+  border: none;
+  background-color: #fb7413;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 @media (min-width: 375px) {
-  .first-display-card {
+  .main .first-display-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -52,39 +61,88 @@ body {
     width: 350px;
     height: 350px;
   }
-  .first-display-card__icon {
+  .main .first-display-card__icon {
     width: 40px;
     height: 40px;
     padding: 1.25em;
     background-color: #262f3b;
     border-radius: 50%;
   }
-  .first-display-card__header {
+  .main .first-display-card__header {
     margin: 1.5em 0 1em 0;
     font-size: 2rem;
   }
-  .first-display-card__description {
-    font-size: 1.25rem;
+  .main .first-display-card__description {
+    font-size: 1.3rem;
     line-height: 150%;
+  }
+  .main .first-display-card .button-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 2em 0;
+  }
+  .main .first-display-card .button-section__btn {
+    padding: 1em 1.25em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #262f3b;
+    color: #959eac;
+    border: none;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.5s, color .5s;
+    transition: background-color 0.5s, color .5s;
+    cursor: pointer;
+  }
+  .main .first-display-card .button-section__btn:hover {
+    background-color: #959eac;
+    color: white;
+  }
+  .main .first-display-card__primary-button {
+    padding: .8em 0.4em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    -webkit-transition: background-color .5s, color .5s;
+    transition: background-color .5s, color .5s;
+  }
+  .main .first-display-card__primary-button:hover {
+    background-color: white;
+    color: #fb7413;
   }
 }
 
 @media (min-width: 1440px) {
-  .first-display-card {
+  .main .first-display-card {
     width: 500px;
     height: 500px;
   }
-  .first-display-card__icon {
+  .main .first-display-card__icon {
     width: 54px;
     height: 54px;
     padding: 1.5em;
   }
-  .first-display-card__header {
-    margin: 1.5em 0 1em 0;
+  .main .first-display-card__header {
+    margin: 1em 0;
     font-size: 3.5rem;
   }
-  .first-display-card__description {
+  .main .first-display-card__description {
     font-size: 1.9rem;
+  }
+  .main .first-display-card .button-section {
+    margin: 3em 0;
+  }
+  .main .first-display-card .button-section__btn {
+    padding: 1.25em 1.5em;
+    font-size: 1.75rem;
+  }
+  .main .first-display-card__primary-button {
+    padding: 1em 0.5em;
+    font-size: 1.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

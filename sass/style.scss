@@ -17,49 +17,103 @@ body {
     padding: 3em;
     background-color: $VeryDarkBlue;
     border-radius: 5%;
-    &__description{
+    &__description {
       color: $MediumGrey;
     }
-  }
-}
-@media (min-width: 375px) {
-  .first-display-card {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 350px;
-    &__icon {
-      width: 40px;
-      height: 40px;
-      padding: 1.25em;
-      background-color: $DarkBlue;
-      border-radius: 50%;
-    }
-    &__header{
-      margin: 1.5em 0 1em 0;
-      font-size: 2rem;
-    }
-    &__description{
-      font-size: 1.25rem;
-      line-height: 150%;
+    &__primary-button {
+      border-radius: 25px;
+      border: none;
+      background-color: $PrimaryButton;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
     }
   }
-}
-@media (min-width: 1440px) {
-  .first-display-card {
-    width: 500px;
-    height: 500px;
-    &__icon{
-      width: 54px;
-      height: 54px;
-      padding: 1.5em;
+
+  @media (min-width: 375px) {
+    .first-display-card {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      height: 350px;
+      &__icon {
+        width: 40px;
+        height: 40px;
+        padding: 1.25em;
+        background-color: $DarkBlue;
+        border-radius: 50%;
+      }
+      &__header {
+        margin: 1.5em 0 1em 0;
+        font-size: 2rem;
+      }
+      &__description {
+        font-size: 1.3rem;
+        line-height: 150%;
+      }
+      .button-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0;
+        &__btn {
+          padding: 1em 1.25em;
+          font-size: 1.2rem;
+          font-weight: 700;
+          background-color: $DarkBlue;
+          color: $LightGrey;
+          border: none;
+          border-radius: 50%;
+          transition: background-color 0.5s, color .5s;
+          cursor: pointer;
+          
+        }
+        &__btn:hover {
+          background-color: $LightGrey;
+          color: $white;
+        }
+        
+      }
+      &__primary-button {
+        padding: .8em 0.4em;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $white;
+        letter-spacing: 1px;
+        transition: background-color .5s, color .5s;
+      }
+      &__primary-button:hover{
+        background-color: $white;
+        color: $PrimaryButtonFontColor;
+      }
     }
-    &__header{
-      margin: 1.5em 0 1em 0;
-      font-size: 3.5rem;
-    }
-    &__description{
-      font-size: 1.9rem;
+  }
+  @media (min-width: 1440px) {
+    .first-display-card {
+      width: 500px;
+      height: 500px;
+      &__icon {
+        width: 54px;
+        height: 54px;
+        padding: 1.5em;
+      }
+      &__header {
+        margin: 1em 0;
+        font-size: 3.5rem;
+      }
+      &__description {
+        font-size: 1.9rem;
+      }
+      .button-section{
+        margin: 3em 0;
+        &__btn{
+          padding: 1.25em 1.5em;
+          font-size: 1.75rem;
+        }
+      }
+      &__primary-button{
+        padding: 1em 0.5em;
+        font-size: 1.7rem;
+      }
     }
   }
 }
