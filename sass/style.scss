@@ -34,13 +34,15 @@ body {
   .second-display-card{
     display: flex;
     flex-direction: column;
-    padding: 3em;
+    align-items: center;
+    padding: 3em 1em;
     background-color: $VeryDarkBlue;
     border-radius: 5%;
   }
 
   @media (min-width: 375px) {
     .first-display-card {
+      display: none;
       width: 350px;
       height: 350px;
       &__icon {
@@ -96,7 +98,9 @@ body {
     .second-display-card{
       width: 350px;
       height: 350px;
-
+      &__illustration{
+        padding: 2em 0;
+      }
     }
   }
   @media (min-width: 1440px) {
@@ -130,7 +134,32 @@ body {
     .second-display-card{
       width: 500px;
       height: 500px;
-      
+      &__illustration{
+        margin: 1em 0;
+        width: 175px;
+        height: 175px;
+      }
+      &__selected-area{
+        text-align: center;
+        width: 200px;
+        height: 28px;
+        padding: .4em 0;
+        border-radius: 50px;
+        background-color: $DarkBlue;
+        color: $PrimaryButtonFontColor;
+        font-size: 1.5rem;
+      }
+      &__header{
+        padding: 1em 0;
+        font-size: 3rem;
+      }
+      &__description{
+        color: $MediumGrey;
+        text-align: center;
+        padding: 0 3.75em;
+        font-size: 1.6rem;
+        line-height: 175%;
+      }
     }
   }
 }

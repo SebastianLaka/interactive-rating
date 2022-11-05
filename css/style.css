@@ -64,13 +64,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em 1em;
   background-color: #1a222d;
   border-radius: 5%;
 }
 
 @media (min-width: 375px) {
   .main .first-display-card {
+    display: none;
     width: 350px;
     height: 350px;
   }
@@ -131,6 +135,9 @@ body {
     width: 350px;
     height: 350px;
   }
+  .main .second-display-card__illustration {
+    padding: 2em 0;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -164,6 +171,32 @@ body {
   .main .second-display-card {
     width: 500px;
     height: 500px;
+  }
+  .main .second-display-card__illustration {
+    margin: 1em 0;
+    width: 175px;
+    height: 175px;
+  }
+  .main .second-display-card__selected-area {
+    text-align: center;
+    width: 200px;
+    height: 28px;
+    padding: .4em 0;
+    border-radius: 50px;
+    background-color: #262f3b;
+    color: #fb7413;
+    font-size: 1.5rem;
+  }
+  .main .second-display-card__header {
+    padding: 1em 0;
+    font-size: 3rem;
+  }
+  .main .second-display-card__description {
+    color: #7c8798;
+    text-align: center;
+    padding: 0 3.75em;
+    font-size: 1.6rem;
+    line-height: 175%;
   }
 }
 /*# sourceMappingURL=style.css.map */
