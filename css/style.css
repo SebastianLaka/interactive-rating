@@ -136,7 +136,31 @@ body {
     height: 350px;
   }
   .main .second-display-card__illustration {
-    padding: 2em 0;
+    margin: 0 0 1em 0;
+    width: 140px;
+    height: 100px;
+  }
+  .main .second-display-card__selected-area {
+    text-align: center;
+    width: 200px;
+    height: 28px;
+    margin: .5em 0 0 0;
+    padding: .4em 0;
+    border-radius: 50px;
+    background-color: #262f3b;
+    color: #fb7413;
+    font-size: 1.5rem;
+  }
+  .main .second-display-card__header {
+    margin: .75em 0;
+    font-size: 2.75rem;
+  }
+  .main .second-display-card__description {
+    color: #7c8798;
+    text-align: center;
+    padding: 0 .5em;
+    font-size: 1.4rem;
+    line-height: 150%;
   }
 }
 
@@ -169,33 +193,34 @@ body {
     font-size: 1.7rem;
   }
   .main .second-display-card {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
   }
   .main .second-display-card__illustration {
-    margin: 1em 0;
+    margin: 1em 0 1.5em 0;
     width: 175px;
-    height: 175px;
+    height: 125px;
   }
   .main .second-display-card__selected-area {
     text-align: center;
-    width: 200px;
-    height: 28px;
-    padding: .4em 0;
+    width: 250px;
+    height: 35px;
+    padding: .4em 0 0 0;
+    margin: 1em 0 0 0;
     border-radius: 50px;
     background-color: #262f3b;
     color: #fb7413;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .main .second-display-card__header {
-    padding: 1em 0;
+    margin: 1.5em 0 .5em 0;
     font-size: 3rem;
   }
   .main .second-display-card__description {
     color: #7c8798;
     text-align: center;
-    padding: 0 3.75em;
-    font-size: 1.6rem;
+    padding: 0 3em;
+    font-size: 1.5rem;
     line-height: 175%;
   }
 }
