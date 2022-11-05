@@ -42,7 +42,6 @@ body {
 
   @media (min-width: 375px) {
     .first-display-card {
-      display: none;
       width: 350px;
       height: 350px;
       &__icon {
@@ -96,6 +95,7 @@ body {
       }
     }
     .second-display-card{
+      display: none;
       width: 350px;
       height: 350px;
       &__illustration{
