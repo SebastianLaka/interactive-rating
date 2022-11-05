@@ -33,6 +33,7 @@ body {
   @media (min-width: 375px) {
     .first-display-card {
       display: flex;
+      display: none;
       flex-direction: column;
       width: 350px;
       height: 350px;
