@@ -14,6 +14,8 @@ body {
   align-items: center;
   height: 100vh;
   .first-display-card {
+    display: flex;
+    flex-direction: column;
     padding: 3em;
     background-color: $VeryDarkBlue;
     border-radius: 5%;
@@ -29,12 +31,16 @@ body {
       cursor: pointer;
     }
   }
+  .second-display-card{
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    background-color: $VeryDarkBlue;
+    border-radius: 5%;
+  }
 
   @media (min-width: 375px) {
     .first-display-card {
-      display: flex;
-      display: none;
-      flex-direction: column;
       width: 350px;
       height: 350px;
       &__icon {
@@ -87,6 +93,11 @@ body {
         color: $PrimaryButtonFontColor;
       }
     }
+    .second-display-card{
+      width: 350px;
+      height: 350px;
+
+    }
   }
   @media (min-width: 1440px) {
     .first-display-card {
@@ -115,6 +126,11 @@ body {
         padding: 1em 0.5em;
         font-size: 1.7rem;
       }
+    }
+    .second-display-card{
+      width: 500px;
+      height: 500px;
+      
     }
   }
 }
