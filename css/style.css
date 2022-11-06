@@ -47,6 +47,21 @@ body {
   color: #7c8798;
 }
 
+.main .first-display-card .button-section__btn {
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+  cursor: pointer;
+}
+
+.main .first-display-card .button-section__btn:focus {
+  background-color: #959eac;
+  color: white;
+}
+
+.main .first-display-card .button-section__btn:hover {
+  background-color: #fb7413;
+}
+
 .main .first-display-card__primary-button {
   border-radius: 25px;
   border: none;
@@ -109,22 +124,15 @@ body {
     color: #959eac;
     border: none;
     border-radius: 50%;
-    -webkit-transition: background-color 0.5s, color .5s;
-    transition: background-color 0.5s, color .5s;
-    cursor: pointer;
-  }
-  .main .first-display-card .button-section__btn:hover {
-    background-color: #959eac;
-    color: white;
   }
   .main .first-display-card__primary-button {
-    padding: .8em 0.4em;
+    padding: 0.8em 0.4em;
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
     letter-spacing: 1px;
-    -webkit-transition: background-color .5s, color .5s;
-    transition: background-color .5s, color .5s;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
   }
   .main .first-display-card__primary-button:hover {
     background-color: white;
@@ -144,21 +152,21 @@ body {
     text-align: center;
     width: 200px;
     height: 28px;
-    margin: .5em 0 0 0;
-    padding: .4em 0;
+    margin: 0.5em 0 0 0;
+    padding: 0.4em 0;
     border-radius: 50px;
     background-color: #262f3b;
     color: #fb7413;
     font-size: 1.5rem;
   }
   .main .second-display-card__header {
-    margin: .75em 0;
+    margin: 0.75em 0;
     font-size: 2.75rem;
   }
   .main .second-display-card__description {
     color: #7c8798;
     text-align: center;
-    padding: 0 .5em;
+    padding: 0 0.5em;
     font-size: 1.4rem;
     line-height: 150%;
   }
@@ -205,7 +213,7 @@ body {
     text-align: center;
     width: 250px;
     height: 35px;
-    padding: .4em 0 0 0;
+    padding: 0.4em 0 0 0;
     margin: 1em 0 0 0;
     border-radius: 50px;
     background-color: #262f3b;
@@ -213,7 +221,7 @@ body {
     font-size: 1.8rem;
   }
   .main .second-display-card__header {
-    margin: 1.5em 0 .5em 0;
+    margin: 1.5em 0 0.5em 0;
     font-size: 3rem;
   }
   .main .second-display-card__description {

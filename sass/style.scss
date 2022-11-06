@@ -22,6 +22,19 @@ body {
     &__description {
       color: $MediumGrey;
     }
+    .button-section{
+    &__btn {
+      transition: background-color 0.5s, color 0.5s;
+      cursor: pointer;
+    }
+    &__btn:focus {
+      background-color: $LightGrey;
+      color: $white;
+  }
+  &__btn:hover{
+    background-color: $PrimaryButton;
+  }
+}
     &__primary-button {
       border-radius: 25px;
       border: none;
@@ -31,7 +44,7 @@ body {
       cursor: pointer;
     }
   }
-  .second-display-card{
+  .second-display-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,57 +84,56 @@ body {
           color: $LightGrey;
           border: none;
           border-radius: 50%;
-          transition: background-color 0.5s, color .5s;
-          cursor: pointer;
-          
+          //   transition: background-color 0.5s, color .5s;
+          //   cursor: pointer;
+
+          // }
+          // &__btn:hover {
+          //   background-color: $LightGrey;
+          //   color: $white;
         }
-        &__btn:hover {
-          background-color: $LightGrey;
-          color: $white;
-        }
-        
       }
       &__primary-button {
-        padding: .8em 0.4em;
+        padding: 0.8em 0.4em;
         font-size: 1.5rem;
         font-weight: 700;
         color: $white;
         letter-spacing: 1px;
-        transition: background-color .5s, color .5s;
+        transition: background-color 0.5s, color 0.5s;
       }
-      &__primary-button:hover{
+      &__primary-button:hover {
         background-color: $white;
         color: $PrimaryButtonFontColor;
       }
     }
-    .second-display-card{
+    .second-display-card {
       display: none;
       width: 350px;
       height: 350px;
-      &__illustration{
+      &__illustration {
         margin: 0 0 1em 0;
         width: 140px;
         height: 100px;
       }
-      &__selected-area{
+      &__selected-area {
         text-align: center;
         width: 200px;
         height: 28px;
-        margin: .5em 0 0 0;
-        padding: .4em 0;
+        margin: 0.5em 0 0 0;
+        padding: 0.4em 0;
         border-radius: 50px;
         background-color: $DarkBlue;
         color: $PrimaryButtonFontColor;
         font-size: 1.5rem;
       }
-      &__header{
-        margin: .75em 0;
+      &__header {
+        margin: 0.75em 0;
         font-size: 2.75rem;
       }
-      &__description{
+      &__description {
         color: $MediumGrey;
         text-align: center;
-        padding: 0 .5em;
+        padding: 0 0.5em;
         font-size: 1.4rem;
         line-height: 150%;
       }
@@ -143,42 +155,42 @@ body {
       &__description {
         font-size: 1.9rem;
       }
-      .button-section{
+      .button-section {
         margin: 3em 0;
-        &__btn{
+        &__btn {
           padding: 1.25em 1.5em;
           font-size: 1.75rem;
         }
       }
-      &__primary-button{
+      &__primary-button {
         padding: 1em 0.5em;
         font-size: 1.7rem;
       }
     }
-    .second-display-card{
+    .second-display-card {
       width: 450px;
       height: 450px;
-      &__illustration{
+      &__illustration {
         margin: 1em 0 1.5em 0;
         width: 175px;
         height: 125px;
       }
-      &__selected-area{
+      &__selected-area {
         text-align: center;
         width: 250px;
         height: 35px;
-        padding: .4em 0 0 0;
+        padding: 0.4em 0 0 0;
         margin: 1em 0 0 0;
         border-radius: 50px;
         background-color: $DarkBlue;
         color: $PrimaryButtonFontColor;
         font-size: 1.8rem;
       }
-      &__header{
-        margin: 1.5em 0 .5em 0;
+      &__header {
+        margin: 1.5em 0 0.5em 0;
         font-size: 3rem;
       }
-      &__description{
+      &__description {
         color: $MediumGrey;
         text-align: center;
         padding: 0 3em;
