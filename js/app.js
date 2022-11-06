@@ -1,11 +1,6 @@
-const buttonsFromDiv = document.querySelectorAll(".button-section__btn");
-const primaryButton = document.querySelector(
-  ".first-display-card__primary-button"
-)
-const buttonsClick = () => {
-  if () {
-    
-  }
-}
+const firstDisplayCard = document.querySelector(".first-display-card")
+const secondDisplayCard = document.querySelector(".second-display-card")
+const buttons = document.querySelectorAll(".button-section__btn")
+const submitButton = document.getElementById("submit")
+const choosenButton = document.getElementById("selected-button")
 
-primaryButton.addEventListener('click', buttonsClick)
