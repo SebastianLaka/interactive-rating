@@ -19,6 +19,10 @@ body {
     padding: 3em;
     background-color: $VeryDarkBlue;
     border-radius: 5%;
+
+    .hidden{
+      display: none;
+    }
     &__description {
       color: $MediumGrey;
     }
@@ -84,13 +88,6 @@ body {
           color: $LightGrey;
           border: none;
           border-radius: 50%;
-          //   transition: background-color 0.5s, color .5s;
-          //   cursor: pointer;
-
-          // }
-          // &__btn:hover {
-          //   background-color: $LightGrey;
-          //   color: $white;
         }
       }
       &__primary-button {

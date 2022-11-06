@@ -43,6 +43,10 @@ body {
   border-radius: 5%;
 }
 
+.main .first-display-card .hidden {
+  display: none;
+}
+
 .main .first-display-card__description {
   color: #7c8798;
 }
