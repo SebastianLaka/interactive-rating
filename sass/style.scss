@@ -13,32 +13,29 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+ 
   .first-display-card {
     display: flex;
     flex-direction: column;
     padding: 3em;
     background-color: $VeryDarkBlue;
     border-radius: 5%;
-
-    .hidden{
-      display: none;
-    }
     &__description {
       color: $MediumGrey;
     }
-    .button-section{
-    &__btn {
-      transition: background-color 0.5s, color 0.5s;
-      cursor: pointer;
+    .button-section {
+      &__btn {
+        transition: background-color 0.5s, color 0.5s;
+        cursor: pointer;
+      }
+      &__btn:focus {
+        background-color: $LightGrey;
+        color: $white;
+      }
+      &__btn:hover {
+        background-color: $PrimaryButton;
+      }
     }
-    &__btn:focus {
-      background-color: $LightGrey;
-      color: $white;
-  }
-  &__btn:hover{
-    background-color: $PrimaryButton;
-  }
-}
     &__primary-button {
       border-radius: 25px;
       border: none;
@@ -48,6 +45,7 @@ body {
       cursor: pointer;
     }
   }
+ 
   .second-display-card {
     display: flex;
     flex-direction: column;
@@ -56,7 +54,9 @@ body {
     background-color: $VeryDarkBlue;
     border-radius: 5%;
   }
-
+  .hidden {
+    display: none;
+  }
   @media (min-width: 375px) {
     .first-display-card {
       width: 350px;
@@ -104,9 +104,9 @@ body {
       }
     }
     .second-display-card {
-      display: none;
       width: 350px;
       height: 350px;
+      
       &__illustration {
         margin: 0 0 1em 0;
         width: 140px;
@@ -134,7 +134,8 @@ body {
         font-size: 1.4rem;
         line-height: 150%;
       }
-    }
+  
+  }
   }
   @media (min-width: 1440px) {
     .first-display-card {

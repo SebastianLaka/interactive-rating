@@ -43,10 +43,6 @@ body {
   border-radius: 5%;
 }
 
-.main .first-display-card .hidden {
-  display: none;
-}
-
 .main .first-display-card__description {
   color: #7c8798;
 }
@@ -89,6 +85,10 @@ body {
   padding: 3em 1em;
   background-color: #1a222d;
   border-radius: 5%;
+}
+
+.main .hidden {
+  display: none;
 }
 
 @media (min-width: 375px) {
@@ -143,7 +143,6 @@ body {
     color: #fb7413;
   }
   .main .second-display-card {
-    display: none;
     width: 350px;
     height: 350px;
   }
