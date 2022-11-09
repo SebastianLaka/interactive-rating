@@ -8,3 +8,5 @@ submitButton.addEventListener("click", () => {
   secondCard.classList.remove("hidden");
   firstCard.style.display = "none";
 });
+
+
